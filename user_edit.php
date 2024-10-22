@@ -51,11 +51,16 @@
             <tr>
                 <td colspan="2">
                     <button type="submit" name="ubah">Simpan</button>
-                    <button type="reset">Batal</button>
+                    <button type="reset" onclick="batalEdit()">Batal</button>
                 </td>
             </tr>
         </table>
     </form>
 </body>
+<script>
+    function batalEdit() {
+        window.location.href = "halaman_user.php";
+    }
+</script>
 
 </html>
