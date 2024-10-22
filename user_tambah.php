@@ -18,7 +18,14 @@
             <tr>
                 <td>Password</td>
                 <td>:</td>
-                <td><input type="password" name="password"></td>
+                <td>
+                    <div id="app">
+                        <input type="password" name="password" id="input_password">
+                        <label for="show_password">
+                            <input type="checkbox" id="show_password">Tampilkan Password
+                        </label>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td>Nama Lengkap</td>
@@ -39,5 +46,17 @@
         </table>
     </form>
 </body>
+<script>
+    const inputPassword = document.getElementById("input_password");
+    const showPassword = document.getElementById("show_password");
+
+    showPassword.addEventListener("input", (e) => {
+        if (e.target.checked) {
+            inputPassword.setAttribute("type", "text");
+        } else {
+            inputPassword.setAttribute("type", "password")
+        };
+    })
+</script>
 
 </html>
