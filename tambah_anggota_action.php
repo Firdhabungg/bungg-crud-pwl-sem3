@@ -10,7 +10,7 @@ $file_location = $_FILES['gambar']['tmp_name'];
 $file_name = $_FILES['gambar']['name'];
 
 $upload = "upload/";
-$upload_file = $uploaddir . $file_name;
+$upload_file = $upload . $file_name;
 
 if (move_uploaded_file($file_location, $upload_file)) {;
 

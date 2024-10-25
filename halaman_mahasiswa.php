@@ -19,7 +19,7 @@
             <th width="150">Jenis Kelamin</th>
             <th width="150">Kelas</th>
             <th width="350">Foto</th>
-            <th width="100">Kelola</th>
+            <th width="150">Kelola</th>
         </tr>
         <?php
         include 'config.php';
@@ -36,8 +36,9 @@
                 <td><?= $student['alamat']; ?></td>
                 <td><?= $student['jenis_kelamin']; ?></td>
                 <td><?= $student['kelas']; ?></td>
-                <td><img src="<?= $student['foto']; ?>" width="100% "></td>
+                <td><img src="<?= $student['foto']; ?>" width="50%"></td>
                 <td align="center">
+                    <a href="edit_anggota.php?nim=<?= $student['nim']; ?>">Edit</a> |
                     <a href="hapus_anggota.php?nim=<?= $student['nim']; ?>" onclick=" return confirm('yakin hapus?');">Hapus</a>
                 </td>
             </tr>
