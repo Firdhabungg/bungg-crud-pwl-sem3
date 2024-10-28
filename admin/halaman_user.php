@@ -58,7 +58,7 @@
                 <th>Kelola</th>
             </tr>
             <?php
-            include 'config.php';
+            include '../config.php';
 
             $sql = "SELECT * FROM user ORDER BY user_namalengkap";
 

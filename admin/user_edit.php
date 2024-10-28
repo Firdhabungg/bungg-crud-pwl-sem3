@@ -9,7 +9,7 @@
 
 <body>
     <?php
-    include 'config.php';
+    include '../config.php';
     $username = $_GET['user_nama'];
 
     $sql = "SELECT * FROM user WHERE user_nama='$username'";

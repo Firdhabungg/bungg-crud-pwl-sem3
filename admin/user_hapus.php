@@ -1,5 +1,5 @@
 <?php
-include 'config.php';
+include '../config.php';
 
 $username = $_GET['user_nama'];
 $sql = "DELETE FROM user WHERE user_nama='$username'";
